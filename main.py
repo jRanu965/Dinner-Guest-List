@@ -23,4 +23,12 @@ def add_guest():
     if name in guest_names:
         print("That guest is already on the list.")
         return
-    guest_names 
+    guest_names.append(name)
+    print(f"{name} added to the guest list.")
+
+def modify_guest():
+    """Modify an existing guest name."""
+    name = input("Enter guest name to modify: ").title().strip() 
+
+    if name in guest_names:
+    index = guest_names.index(name)
