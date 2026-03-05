@@ -8,7 +8,6 @@ Dinner Guest list
 - Show invitations.
 """
 guest_names = []
-guest_meals = []
 
 def add_guest():
     """Add a guest to the list."""
@@ -68,4 +67,33 @@ def sort_guests():
     print("Guest list sorted alphabetically.")
 
 def show_guest_count():
-    
+      """Show total number of guests."""
+      print(f"Number of guests: {len(guest_names)}")
+
+def show_invitations():
+    """Display invitation messages."""
+    if not guest_names:
+        print("No guests to invite.")
+        return
+
+    print("\nInvitations:")
+    for index in range(len(guest_names)):
+        print(f"Dear {guest_names[index]}, you are invited to the event!") 
+
+def main():
+    """
+    Main program loop
+    """
+
+print("Welcome to the Guest Invitation App!")
+
+while True:
+        print("\nPlease choose an option:")
+        print("1 - Add guest")
+        print("2 - Modify guest")
+        print("3 - Remove guest")
+        print("4 - Sort guests")
+        print("5 - Show number of guests")
+        print("6 - Show invitations")
+        print("0 - Exit")
+
