@@ -28,7 +28,23 @@ def add_guest():
 
 def modify_guest():
     """Modify an existing guest name."""
-    name = input("Enter guest name to modify: ").title().strip() 
+    name = input("Enter guest name to modify: ").title().strip()
 
     if name in guest_names:
-    index = guest_names.index(name)
+        index = guest_names.index(name)
+        new_name = input("Enter the new name: ").title().strip()
+
+        if new_name == "":
+            print("Name cannot be empty.")
+            return
+
+        if new_name in guest_names:
+            print("Duplicate names are not allowed.")
+            return
+
+        guest_names[index] = new_name
+        print("Guest name updated.")
+    else:
+        print("Guest not found.")
+
+def remove_guest():
