@@ -48,3 +48,24 @@ def modify_guest():
         print("Guest not found.")
 
 def remove_guest():
+    """Remove a guest from the list."""
+    name = input("Enter guest name to remove: ").title().strip()
+
+    if name in guest_names:
+        index = guest_names.index(name)
+        guest_names.pop(index)
+        print("Guest removed.")
+    else:
+        print("No guest by that name.")
+
+def sort_guests():
+    """Sort guests alphabetically."""
+    if not guest_names:
+        print("No guests to sort.")
+        return
+
+    guest_names.sort()
+    print("Guest list sorted alphabetically.")
+
+def show_guest_count():
+    
