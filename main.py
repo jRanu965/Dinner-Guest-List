@@ -97,3 +97,21 @@ while True:
         print("6 - Show invitations")
         print("0 - Exit")
 
+        choice = input("Enter choice: ").strip()
+
+        if choice == "1":
+            add_guest()
+        elif choice == "2":
+            modify_guest()
+        elif choice == "3":
+            remove_guest()
+        elif choice == "4":
+            sort_guests()
+        elif choice == "5":
+            show_guest_count()
+        elif choice == "6":
+            show_invitations()
+        elif choice == "0":
+            print("Goodbye!")
+            break
+
