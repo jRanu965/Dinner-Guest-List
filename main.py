@@ -114,4 +114,7 @@ while True:
         elif choice == "0":
             print("Goodbye!")
             break
+        print("Invalid option. Please try again.")
 
+if __name__ == "__main__":
+    main()
