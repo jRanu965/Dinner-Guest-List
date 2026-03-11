@@ -89,7 +89,7 @@ print("Welcome to the Guest Invitation App!")
 
 while True:
         print("\nPlease choose an option:")
-        print("1 - Add guest")
+        print("1 - Add list")
         print("2 - Modify guest")
         print("3 - Remove guest")
         print("4 - Sort guests")
@@ -98,6 +98,7 @@ while True:
         print("0 - Exit")
 
         choice = input("Enter choice: ").strip()
+
 
         if choice == "1":
             add_guest()
@@ -118,3 +119,4 @@ while True:
 
 if __name__ == "__main__":
     main()
+      
