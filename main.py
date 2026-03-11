@@ -89,7 +89,7 @@ print("Welcome to the Guest Invitation App!")
 
 while True:
         print("\nPlease choose an option:")
-        print("1 - Add list")
+        print("1 - Add guest")
         print("2 - Modify guest")
         print("3 - Remove guest")
         print("4 - Sort guests")
